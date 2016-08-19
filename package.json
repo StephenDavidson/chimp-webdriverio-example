@@ -1,0 +1,26 @@
+{
+  "name": "chimp-webdriverio-example",
+  "version": "1.0.0",
+  "description": "Example of chimp webdriverio and mocha",
+  "scripts": {
+    "test": "node node_modules/.bin/chimp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenDavidson/chimp-webdriverio-example.git"
+  },
+  "keywords": [
+    "chimp",
+    "webdriverio",
+    "mocha"
+  ],
+  "author": "Stephen Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephenDavidson/chimp-webdriverio-example/issues"
+  },
+  "homepage": "https://github.com/StephenDavidson/chimp-webdriverio-example#readme",
+  "dependencies": {
+    "chimp": "^0.40.4"
+  }
+}
