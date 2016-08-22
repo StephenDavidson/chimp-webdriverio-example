@@ -12,6 +12,6 @@ describe('Search', () => {
 
     it('should display oranges wikipedia article in results', () => {
         searchPage.searchFor('oranges wikipedia');
-        searchPage.searchResults.getText().should.contain('Oranges - Wikipedia');
+        searchPage.searchResults.getText().should.contain('Orange (fruit) - Wikipedia');
     });
 });
