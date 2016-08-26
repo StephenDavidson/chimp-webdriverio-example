@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/StephenDavidson/chimp-webdriverio-example#readme",
   "dependencies": {
-    "chimp": "^0.40.4"
+    "chimp": "=0.40.4"
   }
 }
