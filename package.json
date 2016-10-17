@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Example of chimp webdriverio and mocha",
   "scripts": {
-    "test": "node node_modules/.bin/chimp"
+    "test": "node node_modules/.bin/chimp",
+    "lint": "node node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/StephenDavidson/chimp-webdriverio-example#readme",
   "dependencies": {
-    "chimp": "=0.40.4"
+    "chimp": "^0.41.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
   }
 }

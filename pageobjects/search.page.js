@@ -1,25 +1,27 @@
-var page = require('./page')
+/* eslint-disable no-undef */
 
-var searchPage = Object.create(page, {
+const page = require('./page');
+
+const searchPage = Object.create(page, {
     /**
      * define elements
      */
-    searchBtn: { get: function () { return browser.element('button[type="submit"]'); } },
-    searchField: { get: function () { return browser.element('input[name="q"]'); } },
-    searchResults: { get: function () { return browser.element('#search'); } },
+  searchBtn: { get() { return browser.element('button[type="submit"]'); } },
+  searchField: { get() { return browser.element('input[name="q"]'); } },
+  searchResults: { get() { return browser.element('#search'); } },
 
     /**
      * define or overwrite page methods
      */
-    open: { value: function() {
-        page.open.call(this, '');
-    } },
+  open: { value() {
+    page.open.call(this, '');
+  } },
 
-    searchFor: { value: function(value) {
-        this.searchField.setValue(value);
-        this.searchBtn.click();
-        this.searchResults.waitForVisible();
-    } }
+  searchFor: { value(value) {
+    this.searchField.setValue(value);
+    this.searchBtn.click();
+    this.searchResults.waitForVisible();
+  } },
 });
 
 module.exports = searchPage;

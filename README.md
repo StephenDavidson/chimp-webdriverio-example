@@ -7,7 +7,7 @@ Example of using [chimp](https://github.com/xolvio/chimp) for frontend test auto
 
 ```
 cd chimp-webdriverio-example/
-npm install
+yarn
 ```
 
 ## Running tests
