@@ -79,6 +79,11 @@ module.exports = {
         arch: 'ia32',
         baseURL: 'https://selenium-release.storage.googleapis.com',
       },
+     firefox: {
+	version: '0.11.1',
+	arch: process.arch,
+	baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
+      },
     },
   },
 
